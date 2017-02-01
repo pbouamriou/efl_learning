@@ -31,3 +31,9 @@
 # Debug files
 *.dSYM/
 *.su
+
+# Executable
+example
+
+# EFL
+*.edj

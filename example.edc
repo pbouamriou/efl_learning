@@ -1,0 +1,9 @@
+collections {
+   group {
+      name: "mygroup";
+      parts {
+         rect { "background"; }
+      }
+      programs {}
+   }
+}
