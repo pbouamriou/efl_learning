@@ -1,0 +1,17 @@
+
+class Test.Object  {
+   [[legacy_prefix: test_object;
+   oe_prefix: test_obj;]]
+
+   methods {
+      @property part_highlight {
+         set {
+         }
+         get {
+         }
+         values {
+            part_highlight: bool;
+         }
+      }
+   }
+}
