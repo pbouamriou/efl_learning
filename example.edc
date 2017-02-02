@@ -3,6 +3,39 @@ collections {
       name: "mygroup";
       parts {
          rect { "background"; }
+         rect { "blue,rectangle";
+            desc { "default";
+               color: 0 0 255 255;
+               rel1.relative: 0.1 0.2;
+               rel2.relative: 0.4 0.7;
+            }
+         }
+         rect { "green,rectangle";
+            desc { "default";
+               color: 0 255 0 255;
+               rel1.to: "blue,rectangle";
+               rel2.to: "blue,rectangle";
+               rel1.relative: 1.5 0.0;
+               rel2.relative: 2.5 1.0;
+            }
+         }
+         text { "text";
+            effect: FAR_SHADOW;
+            desc { "default";
+               color: 255 167 0 255;
+               rel1 {
+                  to: "blue,rectangle";
+                  relative: 0.17 0.5;
+                  offset: 0.0 -12;
+               }
+               text {
+                  size: 12;
+                  font: "sans";
+                  text: "Rectangle";
+                  align: 0 0;
+               }
+            }
+         }
       }
       programs {}
    }

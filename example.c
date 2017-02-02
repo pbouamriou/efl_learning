@@ -8,6 +8,9 @@
 
 EAPI_MAIN int elm_main(int argc, char** argv) {
 
+   (void)argc;
+   (void)argv;
+
    Evas_Object *win, *layout;
 
    win = elm_win_util_standard_add("Edje", "Edje Example");
@@ -16,7 +19,7 @@ EAPI_MAIN int elm_main(int argc, char** argv) {
    layout = elm_layout_add(win);
 
    elm_layout_file_set(layout, EDJE_FILE, EDJE_GROUP);
-   
+
    evas_object_resize(layout, SIZE_X, SIZE_Y);
    evas_object_resize(win, SIZE_X, SIZE_Y);
 
